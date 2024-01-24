@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .track-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px #000;
+            width: 300px;
+        }
+        .track-container h2 {
+            text-align: center;
+        }
+        .track-container input {
+            width: 92%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .track-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #5C6BC0;
+            color: white;
+            cursor: pointer;
+        }
+        .track-container button:hover {
+            background-color: #7986CB;
+        }
+    </style>
+</head>
+<body>
+    <div class="track-container">
+        <h2>Track Order</h2>
+        <input type="text" placeholder="Order ID" required>
+        <button type="submit">Track</button>
+    </div>
+</body>
+</html>

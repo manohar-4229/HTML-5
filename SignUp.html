@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Add some custom CSS */
+        .container {
+            width: 300px;
+            margin: auto;
+        }
+        .input-field {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="signup-container" class="container" draggable="true">
+        <h2 id="signup-heading" class="heading" contenteditable="true" spellcheck="false" title="Click to edit">Sign Up</h2>
+        <form action="/submit_signup" method="post">
+            <input type="text" id="username" name="username" class="input-field form-control" placeholder="Username" required minlength="5" maxlength="15" title="Enter your username" draggable="true"><br>
+            <input type="email" id="email" name="email" class="input-field form-control" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter your email" draggable="true"><br>
+            <input type="password" id="password" name="password" class="input-field form-control" placeholder="Password" required minlength="8" title="Enter your password" draggable="true"><br>
+            <input type="password" id="confirm_password" name="confirm_password" class="input-field form-control" placeholder="Confirm Password" required minlength="8" title="Confirm your password" draggable="true"><br>
+            <button type="submit" class="submit-button btn btn-primary" accesskey="s" tabindex="0">Sign Up</button><br>
+        </form>
+    </div>
+</body>
+</html>
